@@ -4,19 +4,15 @@ public class Task15{
     public static void main(String[] args){
             Scanner inputCollector =  new Scanner(System.in);
             
-            int largest = 0;
+            int total = 0;
             int number = 1;
-            int numberEntry;
+            System.out.println("Enter 5 numbers of your choice");
         do{
-            System.out.println("Enter a number: ");
-             numberEntry = inputCollector.nextInt();
-              if(number == 1){
-                largest = numberEntry;
-                }else if(numberEntry > largest){
-                    largest = numberEntry;                
-                }
+            System.out.printf("Enter number %d: ",number);
+             number = inputCollector.nextInt();
+              total = total + number;
                 number++;
         }while(number <= 5);
-        System.out.printf("Largest is: %d%n",largest);
+        System.out.println(total);
     }
 }
