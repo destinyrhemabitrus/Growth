@@ -5,10 +5,10 @@ public class Task16{
 
         java.util.Scanner inputCollector = new java.util.Scanner(System.in);
 
-        String password = "rhema123";
-        while(!password.equals("password")){
+        String password = "";
+        while(!password.equals("rhema123")){
             System.out.println("Enter password: ");
-            password = inputCollector.nextLine();    
+            password = inputCollector.nextLine().strip();    
         }
     }
 }
